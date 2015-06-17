@@ -1,0 +1,24 @@
+{
+  "name": "mappr",
+  "version": "1.0.0",
+  "description": "A WebGL map editor prototype",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/main.js | uglifyjs -mc > app.js",
+    "dev": "watchify js/main.js -v -o app.js",
+    "lint": "standard js/*.js & jshint js/*.js"
+  },
+  "author": "Martin Naumann <martin@geekonaut.de>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^8.1.0",
+    "jshint": "^2.8.0",
+    "standard": "^4.3.0",
+    "uglify-js": "^2.4.16",
+    "watchify": "^2.2.1"
+  },
+  "dependencies": {
+    "three": "^0.71.0",
+    "three-world": "^2.1.0"
+  }
+}
